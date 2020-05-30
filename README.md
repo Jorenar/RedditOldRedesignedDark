@@ -4,7 +4,7 @@
 
 ## Installation
 
-  To install Userstyle you will first need to install [Stylus](https://github.com/openstyles/stylus)
+  To install UserStyle you will first need to install [Stylus](https://github.com/openstyles/stylus)
   browser add-on. Then just:
 
   [INSTALL THIS USERSTYLE](https://raw.githubusercontent.com/Jorengarenar/RedditOldRedesignedDark/master/RedditOldRedesignedDark.user.css)
@@ -17,4 +17,4 @@ Copyright  2005-2014  [Globex Designs, Inc.](https://userstyles.org/users/6943) 
 
 ---
 
-Check also [my other Userstyles](https://github.com/Jorengarenar/userstyles)
+Check also [my other UserStyles](https://github.com/Jorengarenar/userstyles)
