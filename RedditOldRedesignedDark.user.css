@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.2
+@version        2.0.3
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -408,7 +408,7 @@
     padding: 16px 0 !important;
   }
 
-  .entry {
+  .link .entry {
     width: 100% !important;
   }
 
@@ -608,10 +608,6 @@
 
   /* Comments {{{1 */
 
-  .comment .entry {
-    width: initial !important;
-  }
-
   .comment .score,
   .comment time {
     margin-left: 10px !important;
@@ -787,10 +783,6 @@
   }
 
   /* Messages {{{1 */
-
-  .message > .entry {
-    width: initial !important;
-  }
 
   .message > .entry .head {
     color: var(--text-dark) !important;
