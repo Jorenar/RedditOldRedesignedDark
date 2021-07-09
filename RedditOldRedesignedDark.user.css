@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.6
+@version        2.1.0
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -67,6 +67,17 @@
     background: var(--gray-0);
     border: 1px solid var(--gray-1) !important;
     border-radius: 2px !important;
+  }
+
+  body[class] button {
+    background: var(--gray-0);
+    color: var(--text-med);
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  body[class] button:hover {
+    background: var(--gray-1);
   }
 
   /* Upvote/downvote {{{1 */
@@ -659,7 +670,8 @@
     background-color: var(--gray-2);
   }
 
-  /* Submit page {{{1 */
+  /*  Submit page    /   Subreddit settings {{{1 */
+  /* (.roundfield)   /      (.linefield)         */
 
   .formtabs-content {
     border-top: 5px solid var(--gray-3);
@@ -670,7 +682,7 @@
     border: 1px solid var(--gray-3);
   }
 
-  .roundfield {
+  .roundfield, .linefield {
     background-color: var(--gray-1);
   }
 
@@ -701,12 +713,33 @@
     background: var(--gray-1);
   }
 
-  .roundfield .usertext-edit {
+  .roundfield .usertext-edit, .linefield .usertext-edit {
     width: 470px;
   }
 
-  .roundfield textarea {
+  .roundfield textarea, .linefield textarea {
     width: 460px;
+  }
+
+  .linefield span.title {
+    color: var(--text-normal);
+    font-size: 16px;
+  }
+
+  .linefield.mobile {
+    background: var(--gray-1);
+    border: none;
+  }
+
+  /* Stylesheet edit page */
+
+  .stylesheet-customize-container {
+    width: 80%;
+  }
+
+  ul.image-preview-list .description pre.img-url {
+    background: none !important;
+    color: var(--text-normal);
   }
 
   /* Next/Prev buttons {{{1 */
@@ -850,6 +883,11 @@
 
   /* ~misc~ {{{1 */
 
+  #pref-form label[for="show_stylesheets"]:after {
+    content: "\00a0\00a0 \00a0\00a0 UNCHECK THIS WHEN USING USERSTYLES!";
+    color: var(--red);
+  }
+
   .fancy-toggle-button a {
     color: var(--gray-2) !important;
   }
@@ -864,6 +902,11 @@
     width: max-content;
     background: var(--gray-1);
     border-color: var(--gray-3)
+  }
+
+  .author-tooltip__head {
+    background-color: var(--gray-1);
+    color: var(--text-normal);
   }
 
   .thing.spam {
@@ -884,6 +927,16 @@
 
   /* }}}1 */
 
+}
+
+@-moz-document url-prefix("https://www.reddit.com/framedModal/report") {
+  #SHORTCUT_FOCUSABLE_DIV > div[class=""] > div[class][aria-hidden="false"] > div[class] {
+    overflow: initial;
+  }
+
+  #SHORTCUT_FOCUSABLE_DIV > div[class=""] > div[class][aria-hidden="false"] > div[class] > div[class] > div[class] {
+    background: var(--gray-0);
+  }
 }
 
 @-moz-document url-prefix("https://www.redditmedia.com/mediaembed/") {
