@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.3
+@version        2.0.4
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -71,16 +71,20 @@
 
   /* Upvote/downvote {{{1 */
 
-  .arrow:hover {
+  .midcol .arrow:hover {
     opacity: 0.8 !important
   }
 
-  .arrow.upmod {
+  .midcol .arrow.upmod {
     filter: brightness(0.6) contrast(350%) !important;
   }
 
-  .arrow.downmod {
+  .midcol .arrow.downmod {
     filter: brightness(0.7) contrast(200%) hue-rotate(-35deg) !important;
+  }
+
+  .archived-infobar ~ div .midcol .arrow {
+    visibility: hidden !important;
   }
 
   /* Header {{{1 */
