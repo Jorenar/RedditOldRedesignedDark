@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.1
+@version        2.0.2
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -138,16 +138,15 @@
     background: var(--gray-2) !important
   }
 
-  /* Hide: */
-  #redesign-beta-optin-btn,
-  /* Redesign prompt */
-  #sr-more-link
-
-  /* "Edit" button at the end of subreddit headers */
-  {
-    display: none !important;
+  /* Hide Redesign prompt */
+  #redesign-beta-optin-btn {
+        display: none !important;
   }
 
+  /* Hide "Edit" button at the end of subreddit headers */
+  #sr-more-link {
+    display: none !important;
+  }
 
   /* Header bottom left {{{2 */
 
@@ -239,6 +238,24 @@
 
   #header-bottom-right a:hover {
     color: var(--text-normal-hover) !important;
+  }
+
+  #header-bottom-right .user {
+    color: var(--gray-1);
+  }
+
+  #header-bottom-right .userkarma {
+    color: var(--text-dark);
+  }
+
+  #header-bottom-right .userkarma::before {
+    content: "(";
+    font-weight: normal;
+  }
+
+  #header-bottom-right .userkarma::after {
+    content: ")";
+    font-weight: normal;
   }
 
   /* }}}2 */
