@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.4
+@version        2.0.5
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -144,7 +144,7 @@
 
   /* Hide Redesign prompt */
   #redesign-beta-optin-btn {
-        display: none !important;
+    display: none !important;
   }
 
   /* Hide "Edit" button at the end of subreddit headers */
@@ -633,6 +633,10 @@
 
   .commentarea .menuarea {
     margin-top: 5px;
+  }
+
+  .locked-infobar ~ div .comment .reply-button {
+    display: none !important;
   }
 
   /* "sorted by" dropdown menu {{{1 */
