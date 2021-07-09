@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.2
+@version        2.1.3
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -619,6 +619,14 @@
   }
 
   /* Comments {{{1 */
+
+  .usertext.grayed .usertext-body {
+    background-color: transparent;
+  }
+
+  .usertext.grayed .usertext-body .md {
+    color: var(--text-dark) !important;
+  }
 
   .comment .score,
   .comment time {
