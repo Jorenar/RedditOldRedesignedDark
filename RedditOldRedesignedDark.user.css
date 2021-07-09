@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.5
+@version        2.0.6
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -798,6 +798,12 @@
 
   .correspondent {
     background: transparent !important;
+  }
+
+  .message.new > .entry {
+    background-color: #191919;
+    border: 1px solid #333;
+    padding: 6px;
   }
 
   /* Wiki {{{1 */
