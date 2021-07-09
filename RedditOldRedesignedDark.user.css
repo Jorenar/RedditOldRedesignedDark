@@ -245,7 +245,7 @@
   }
 
   #header-bottom-right .user {
-    color: var(--gray-1);
+    color: transparent;
   }
 
   #header-bottom-right .userkarma {
@@ -362,8 +362,8 @@
   }
 
   /* Hide front page's "create note" */
-  .sidebox .spacer {
-    visibility: hidden !important;
+  .sidebox.create .spacer {
+    display: none !important;
   }
 
   /* "Message the mods" */
