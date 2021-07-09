@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.0.0
+@version        2.0.1
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -252,7 +252,6 @@
     padding: 16px !important;
     margin: 0 !important;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-
   }
 
   .side .md {
@@ -264,7 +263,7 @@
     color: var(--text-normal) !important;
   }
 
-  /*  Flair */
+  /* Edit flair/mod */
   .titlebox form.toggle,
   .leavemoderator {
     align-items: center !important;
@@ -564,9 +563,31 @@
     --mewidth: calc(40vw);
     width: var(--mewidth);
     height: calc(var(--mewidth) * 0.5625);
+  } /* the rest is at the end of style */
+
+  /* Flair edit {{{1 */
+
+  .flairselector a.title {
+    display: none;
   }
 
-  /* the rest is at the end of style */
+  .flairselector .flairoptionpane li {
+    display: block !important;
+  }
+
+  .flairselector, #newlink-flair-dropdown {
+    background-color: var(--gray-2);
+    box-shadow: 2px 2px 2px var(--gray-0);
+  }
+
+  .flairselector > h2, #newlink-flair-dropdown > h2 {
+    color: var(--text-normal);
+    background: none;
+  }
+
+  #newlink-flair-dropdown li {
+    border: none;
+  }
 
   /* Comments {{{1 */
 
@@ -665,20 +686,6 @@
 
   .roundfield textarea {
     width: 460px;
-  }
-
-  #newlink-flair-dropdown {
-    background-color: var(--gray-2);
-    box-shadow: 2px 2px 2px var(--gray-0);
-  }
-
-  #newlink-flair-dropdown > h2 {
-    color: var(--text-normal);
-    background: none;
-  }
-
-  #newlink-flair-dropdown li {
-    border: none;
   }
 
   /* Next/Prev buttons {{{1 */
