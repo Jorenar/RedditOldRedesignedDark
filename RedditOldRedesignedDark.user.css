@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.0
+@version        2.1.1
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -589,6 +589,13 @@
     border: 0 !important;
     padding: 0 !important;
     font-size: 16px;
+  }
+
+  /* Crosspost */
+  .crosspost-preview {
+    background: var(--gray-1);
+    border: none;
+    max-width: 99%;
   }
 
   /* YouTube */
