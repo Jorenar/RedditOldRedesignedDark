@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.4
+@version        2.1.5
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -631,6 +631,12 @@
   .comment .usertext.border .usertext-body {
     background-color: transparent;
     border: 1px dashed var(--gray-3);
+    width: max-content;
+  }
+
+  .new-comment .usertext-body {
+    background-color: var(--gray-1);
+    border: 2px dotted var(--gray-3);
     width: max-content;
   }
 
