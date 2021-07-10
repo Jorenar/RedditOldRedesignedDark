@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.3
+@version        2.1.4
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -628,6 +628,12 @@
     color: var(--text-dark) !important;
   }
 
+  .comment .usertext.border .usertext-body {
+    background-color: transparent;
+    border: 1px dashed var(--gray-3);
+    width: max-content;
+  }
+
   .comment .score,
   .comment time {
     margin-left: 10px !important;
@@ -655,7 +661,7 @@
     display: none !important;
   }
 
-  /* "sorted by" dropdown menu {{{1 */
+  /* "sorted by" / "links from"  dropdown menu {{{1 */
 
   .dropdown-title.lightdrop,
   .dropdown-title.lightdrop ~ div > .selected {
@@ -664,14 +670,14 @@
     font-weight: bold;
   }
 
-  .drop-choices.lightdrop.inuse > a {
+  .drop-choices.lightdrop.inuse a {
     background-color: var(--gray-3);
     text-transform: uppercase;
     font-size: 13px;
     color: var(--text-normal) !important;
   }
 
-  .drop-choices.lightdrop.inuse > a:hover {
+  .drop-choices.lightdrop.inuse a:hover {
     background-color: var(--gray-2);
   }
 
