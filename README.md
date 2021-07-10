@@ -12,3 +12,5 @@
   **For this style to work properly, you need to uncheck
   "_allow subreddits to show me custom themes_" in your
   [preferences settings](https://old.reddit.com/prefs)!**
+  <br>
+  (or add filter `reddit.com##^link[title="applied_subreddit_stylesheet"]` to adblock)

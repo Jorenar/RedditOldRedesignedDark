@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.6
+@version        2.1.7
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -16,6 +16,7 @@
     --gray-1: #232323;
     --gray-2: #343434;
     --gray-3: #454545;
+    --gray-a0: #1e1e1e;
     --red: #D3391A;
     --dark-red: #440202;
     --gold: #FB0;
@@ -57,7 +58,7 @@
 
   body[class] pre,
   body[class] code {
-    background: var(--gray-2) !important;
+    background: var(--gray-a0) !important;
     border: none !important;
   }
 
@@ -421,6 +422,8 @@
     display: flex !important;
     margin: 0 !important;
     padding: 16px 0 !important;
+    background-color: transparent;
+    border: none;
   }
 
   .link .entry {
