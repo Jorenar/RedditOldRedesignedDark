@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.9
+@version        2.1.10
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -936,6 +936,10 @@
     width: max-content;
     background: var(--gray-1);
     border-color: var(--gray-3)
+  }
+
+  .modal-content {
+    background-color: var(--gray-a0);
   }
 
   .author-tooltip__head {
