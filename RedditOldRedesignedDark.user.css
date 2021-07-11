@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.15
+@version        2.1.16
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -101,6 +101,8 @@
   #header {
     background: var(--gray-1);
     border-bottom: 2px solid var(--gray-0);
+    position: sticky;
+    top: 0;
   }
 
   /* Subreddit header area {{{2 */
@@ -873,7 +875,7 @@
   .reddit-infobar {
     width: max-content;
     background: var(--gray-1);
-    border-color: var(--gray-3)
+    border-color: var(--gray-3);
   }
 
   .modal-content {
