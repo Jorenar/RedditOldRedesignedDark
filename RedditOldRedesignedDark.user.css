@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.19
+@version        2.1.20
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -90,6 +90,10 @@
 
   .midcol .arrow.downmod {
     filter: brightness(0.7) contrast(200%) hue-rotate(-35deg);
+  }
+
+  .midcol .score.likes {
+    filter: brightness(0.7) contrast(200%);
   }
 
   .archived-infobar ~ div .midcol .arrow {
@@ -310,7 +314,7 @@
   }
 
   .morelink a {
-     color: var(--text-med) !important;
+    color: var(--text-med) !important;
   }
 
   .morelink:hover a {
@@ -860,7 +864,7 @@
     color: #369 !important;
   }
 
-  :is(flair, .linkflairlabel):not(.flairrichtext) {
+  :is(.flair, .linkflairlabel):not(.flairrichtext) {
     padding: 2px;
     background: var(--gray-1);
     border-color: var(--gray-3);
