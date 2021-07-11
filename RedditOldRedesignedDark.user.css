@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.17
+@version        2.1.18
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -185,22 +185,25 @@
 
   /* Tabmenu {{{3 */
 
-  #header-bottom-left .redditname a,
-  #header-bottom-left .pagename:not(.redditname) {
-    color: var(--text-normal);
-    font-size: 24px;
+  #header-bottom-left .pagename {
+    font-size: 22px;
     margin: 0 10px;
+  }
+
+  .profile-page #header-bottom-left .pagename,
+  #header-bottom-left .pagename.redditname a {
+    color: var(--text-normal);
     font-variant: initial;
   }
 
   #header-bottom-left .pagename.redditname a::before {
     content: "r/";
-    margin-right: 2px;
+    margin-right: 0.5px;
   }
 
-  #header-bottom-left .pagename:not(.redditname)::before {
+  .profile-page #header-bottom-left .pagename:not(.redditname)::before {
     content: "u/";
-    margin-right: 1px;
+    margin-right: 0.5px;
   }
 
   #header-bottom-left .tabmenu {
@@ -626,6 +629,15 @@
 
   .locked-infobar ~ div .comment .reply-button {
     display: none;
+  }
+
+  .comment > .parent ~ .midcol,
+  .comment > .parent ~ .entry {
+    margin-top: 8px;
+  }
+
+  .comment textarea {
+    width: 99% !important;
   }
 
   /* "sorted by" / "links from"  dropdown menu {{{1 */
