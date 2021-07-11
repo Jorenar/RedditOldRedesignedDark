@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.18
+@version        2.1.19
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -188,22 +188,13 @@
   #header-bottom-left .pagename {
     font-size: 22px;
     margin: 0 10px;
+    position: initial !important;
   }
 
   .profile-page #header-bottom-left .pagename,
   #header-bottom-left .pagename.redditname a {
     color: var(--text-normal);
     font-variant: initial;
-  }
-
-  #header-bottom-left .pagename.redditname a::before {
-    content: "r/";
-    margin-right: 0.5px;
-  }
-
-  .profile-page #header-bottom-left .pagename:not(.redditname)::before {
-    content: "u/";
-    margin-right: 0.5px;
   }
 
   #header-bottom-left .tabmenu {
@@ -309,14 +300,17 @@
 
   /* "Submit a new..." buttons {{{2 */
 
-  .morelink, .morelink a {
+  .morelink {
     background: var(--gray-2);
     border: 0;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 400;
-    color: var(--text-med) !important;
+  }
+
+  .morelink a {
+     color: var(--text-med) !important;
   }
 
   .morelink:hover a {
@@ -367,10 +361,6 @@
     color: var(--text-normal);
   }
 
-  .titlebox :is(.leavemoderator, .tagline):not(.subscribe-button) {
-    display: none;
-  }
-
   .subscribe-button a.add.active {
     color: var(--text-normal) !important;
   }
@@ -385,6 +375,8 @@
     display: flex !important;
     margin: 0;
     padding: 8px 0;
+    background-color: transparent;
+    border: none;
   }
 
   .link .entry {
@@ -864,7 +856,11 @@
 
   /* ~misc~ {{{1 */
 
-  .flair, .linkflairlabel {
+  .modactionlisting a {
+    color: #369 !important;
+  }
+
+  :is(flair, .linkflairlabel):not(.flairrichtext) {
     padding: 2px;
     background: var(--gray-1);
     border-color: var(--gray-3);
