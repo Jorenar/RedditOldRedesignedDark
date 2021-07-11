@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.14
+@version        2.1.15
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -551,7 +551,7 @@
     filter: invert(1);
   }
 
-  /* Flair edit {{{1 */
+  /* Flair edit pop-up {{{1 */
 
   .flairselector a.title {
     display: none;
@@ -607,6 +607,7 @@
 
   .comment .userattrs .submitter {
     visibility: hidden;
+    color: cyan !important;
   }
 
   .comment .userattrs .submitter::after {
@@ -771,7 +772,7 @@
 
   .listing-chooser li.selected {
     box-shadow: none;
-    border-color: var(--gray-3)
+    border-color: var(--gray-3);
   }
 
   .grippy {
@@ -842,6 +843,13 @@
   }
 
   /* ~misc~ {{{1 */
+
+  .flair, .linkflairlabel {
+    padding: 2px;
+    background: var(--gray-1);
+    border-color: var(--gray-3);
+    color: var(--text-med);
+  }
 
   #pref-form label[for="show_stylesheets"]::after {
     content: "\00a0\00a0 \00a0\00a0 UNCHECK THIS WHEN USING USERSTYLES!";
