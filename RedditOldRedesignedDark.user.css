@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.12
+@version        2.1.14
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -17,15 +17,15 @@
     --gray-2: #343434;
     --gray-3: #454545;
     --gray-a0: #1e1e1e;
-    --red: #D3391A;
+    --red: #d3391a;
     --dark-red: #440202;
-    --gold: #FB0;
+    --gold: #fb0;
     --gold-2: #cfa73a;
     --gold-tuned: #453705;
     --text-normal: hsla(0, 100%, 100%, 0.8);
-    --text-normal-hover: #FFF;
+    --text-normal-hover: #fff;
     --text-med: hsl(0, 0%, 60%);
-    --url: hsla(200, 20%, 60%, .8);
+    --url: hsla(200, 20%, 60%, 0.8);
     --text-dark: hsl(0, 0%, 45%);
     --text-dark-hover: var(--text-normal);
   }
@@ -33,9 +33,7 @@
   /* General tags {{{1 */
 
   body[class] {
-    background-color: var(--gray-0) !important;
-    overflow: visible !important;
-    padding: 0 !important;
+    background-color: var(--gray-0);
   }
 
   body[class], .md {
@@ -49,25 +47,24 @@
   }
 
   body[class] a:hover {
-    color: var(--text-normal-hover) !important;
+    color: var(--text-normal-hover);
   }
 
   body[class] blockquote {
-    color: var(--text-med) !important;
+    color: var(--text-med);
   }
 
   body[class] pre,
   body[class] code {
-    background: var(--gray-a0) !important;
-    border: none !important;
+    background: var(--gray-a0);
+    border: none;
   }
 
   body[class] textarea,
   body[class] input {
     color: var(--text-normal);
     background: var(--gray-0);
-    border: 1px solid var(--gray-1) !important;
-    border-radius: 2px !important;
+    border: 1px solid var(--gray-1);
   }
 
   body[class] button {
@@ -84,50 +81,44 @@
   /* Upvote/downvote {{{1 */
 
   .midcol .arrow:hover {
-    opacity: 0.8 !important
+    opacity: 0.8;
   }
 
   .midcol .arrow.upmod {
-    filter: brightness(0.6) contrast(350%) !important;
+    filter: brightness(0.6) contrast(350%);
   }
 
   .midcol .arrow.downmod {
-    filter: brightness(0.7) contrast(200%) hue-rotate(-35deg) !important;
+    filter: brightness(0.7) contrast(200%) hue-rotate(-35deg);
   }
 
   .archived-infobar ~ div .midcol .arrow {
-    visibility: hidden !important;
+    visibility: hidden;
   }
 
   /* Header {{{1 */
 
   #header {
-    background: var(--gray-1) !important;
-    height: auto !important;
-    position: relative !important;
+    background: var(--gray-1);
     border-bottom: 2px solid var(--gray-0);
   }
 
   /* Subreddit header area {{{2 */
   #sr-header-area {
-    align-items: center !important;
-    background: var(--gray-2) !important;
-    border: 0 !important;
-    display: flex !important;
-    font-size: 12px !important;
-    height: 24px !important;
+    align-items: center;
+    background: var(--gray-2);
+    border: 0;
+    display: flex;
+    font-size: 12px;
+    padding: 3px 0;
   }
 
   /* Subreddit links */
   #sr-header-area a,
   #sr-header-area .dropdown.srdrop .selected {
-    color: var(--text-med) !important;
-    font-size: 13px !important;
-    text-decoration: none !important;
-  }
-
-  #sr-header-area .sr-list .flat-list.sr-bar:nth-of-type(2) {
-    text-transform: none !important;
+    color: var(--text-med);
+    font-size: 13px;
+    text-decoration: none;
   }
 
   #sr-header-area a:hover,
@@ -135,143 +126,119 @@
     color: var(--text-dark-hover) !important;
   }
 
-  /* Little dot separators */
+  #sr-header-area .sr-list .flat-list.sr-bar:nth-of-type(2) {
+    text-transform: none;
+  }
+
   #sr-header-area .sr-bar .separator {
-    color: var(--red) !important;
-    margin: 0 4px !important;
+    color: var(--red);
+    margin: 0 4px;
   }
 
   /* "my subreddits" dropdown menu */
   #sr-header-area .drop-choices {
-    background: var(--gray-0) !important;
-    border: 1px solid var(--gray-2) !important;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.9) !important;
-    font-size: 12px !important;
-    padding: 4px 0 !important;
+    background: var(--gray-0);
+    border: 1px solid var(--gray-2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    padding: 4px 0;
   }
 
   #sr-header-area .drop-choices a:hover {
-    background: var(--gray-2) !important
+    background: var(--gray-2);
   }
 
   /* Hide Redesign prompt */
   #redesign-beta-optin-btn {
-    display: none !important;
+    display: none;
   }
 
   /* Hide "Edit" button at the end of subreddit headers */
   #sr-more-link {
-    display: none !important;
+    display: none;
   }
 
   /* Header bottom left {{{2 */
 
   #header-bottom-left {
-    align-items: center !important;
-    background: none !important;
-    bottom: auto !important;
-    display: flex !important;
-    height: 56px !important;
-    left: auto !important;
-    padding: 0 !important;
-    position: relative !important;
-    right: auto !important;
-    top: auto !important;
+    align-items: center;
+    display: flex;
+    height: 56px;
   }
 
   /* Logo {{{3 */
 
   #header-img {
     background-image: url(https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png) !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    bottom: auto !important;
+    background-position: center !important;
+    background-size: cover;
     height: 36px !important;
-    margin: 4px 16px !important;
-    position: relative !important;
     width: 36px !important;
-    padding: 36px 36px 0 0;
-    box-sizing: border-box;
+    margin: 4px 16px;
   }
 
   #header-img:hover {
-    opacity: 0.8 !important;
+    opacity: 0.8;
   }
 
   /* Tabmenu {{{3 */
 
-  #header-bottom-left .redditname {
-    position: initial !important;
-    margin-top: -3px;
+  #header-bottom-left .redditname a,
+  #header-bottom-left .pagename:not(.redditname) {
+    color: var(--text-normal);
+    font-size: 24px;
+    margin: 0 10px;
+    font-variant: initial;
   }
 
-  #header-bottom-left .redditname a {
-    color: var(--text-normal) !important;
-    font-size: 24px !important;
-    margin: 0 10px !important;
+  #header-bottom-left .pagename.redditname a::before {
+    content: "r/";
+    margin-right: 2px;
+  }
+
+  #header-bottom-left .pagename:not(.redditname)::before {
+    content: "u/";
+    margin-right: 1px;
   }
 
   #header-bottom-left .tabmenu {
-    margin: 0 !important;
-  }
-
-  #header-bottom-left .tabmenu li {
-    font-weight: inherit !important;
-    margin: 0 !important;
+    margin: 0;
   }
 
   #header-bottom-left .tabmenu li a {
-    background: none !important;
-    color: var(--text-normal) !important;
-    font-size: 18px !important;
-    padding: 0 8px !important;
+    font-weight: initial;
+    background: none;
+    color: var(--text-normal);
+    font-size: 18px;
     text-transform: uppercase;
   }
 
   #header-bottom-left .tabmenu li a:hover {
-    color: var(--text-normal-hover) !important;
+    color: var(--text-normal-hover);
   }
 
   #header-bottom-left .tabmenu li.selected a {
-    border: none !important;
-    color: var(--red) !important;
+    border: none;
+    color: var(--red);
   }
 
   /* Header bottom right {{{2 */
 
   #header-bottom-right {
-    align-items: center !important;
-    background: none !important;
-    display: flex !important;
-    font-size: 14px !important;
-    padding: 0 8px !important;
-    top: 24px !important;
+    align-items: center;
+    background: none;
+    display: flex;
+    font-size: 14px;
+    padding: 0 8px;
+    top: 24px;
   }
 
   #header-bottom-right a {
-    color: var(--text-normal) !important;
+    color: var(--text-normal);
   }
 
   #header-bottom-right a:hover {
-    color: var(--text-normal-hover) !important;
-  }
-
-  #header-bottom-right .user {
-    color: transparent;
-  }
-
-  #header-bottom-right .userkarma {
-    color: var(--text-dark);
-  }
-
-  #header-bottom-right .userkarma::before {
-    content: "(";
-    font-weight: normal;
-  }
-
-  #header-bottom-right .userkarma::after {
-    content: ")";
-    font-weight: normal;
+    color: var(--text-normal-hover);
   }
 
   /* }}}2 */
@@ -281,9 +248,9 @@
   /* ~ {{{2 */
 
   .side {
-    background: var(--gray-1) !important;
-    padding: 16px !important;
-    margin: 0 !important;
+    background: var(--gray-1);
+    padding: 16px;
+    margin: 0;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   }
 
@@ -304,98 +271,76 @@
   /* Edit flair/mod */
   .titlebox form.toggle,
   .leavemoderator {
-    align-items: center !important;
-    background: none !important;
-    display: flex !important;
-    color: var(--text-normal) !important;
+    background: none;
+    color: var(--text-normal);
   }
 
   /* Link Info ("this post was submitted...") {{{2 */
 
   .linkinfo {
-    background: var(--gray-2) !important;
-    border-color: var(--gray-3) !important;
-    color: var(--text-normal) !important;
+    background: var(--gray-2);
+    border-color: var(--gray-3);
   }
 
   .linkinfo #shortlink-text {
     color: var(--text-med);
-    background: var(--gray-1)
   }
 
   /* Search Input {{{2 */
   #search input[type="text"] {
-    background: var(--gray-0) !important;
-    border: 1px solid var(--gray-1) !important;
-    border-radius: 2px !important;
-    color: var(--text-normal) !important;
-    font-size: 14px !important;
-    padding: 8px 16px !important;
+    border-radius: 2px;
+    font-size: 14px;
   }
 
   /* Search Expanded Note */
   #searchexpando {
-    background: var(--gray-2) !important;
-    border: 1px solid var(--gray-1) !important;
-    color: var(--text-normal) !important;
-    padding: 8px 16px !important;
+    background: var(--gray-2);
+    padding: 8px 16px;
   }
 
   #searchexpando label {
-    align-items: center !important;
-    display: flex !important;
-    margin: 8px 0 !important;
+    margin: 8px 0 0 0;
   }
 
-  #searchexpando input {
-    margin: 0 8px 0 0 !important;
-  }
+  /* "Submit a new..." buttons {{{2 */
 
-  /* "Submit a new..." et al. buttons {{{2 */
-  .morelink {
-    background: var(--gray-2) !important;
-    border: 0 !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
-    justify-content: center !important;
-    height: auto !important;
-    line-height: normal !important;
-    padding: 8px 16px !important;
-    text-transform: uppercase !important;
-  }
-
-  .morelink:hover {
-    background: var(--gray-3) !important;
-  }
-
-  .morelink a {
+  .morelink, .morelink a {
+    background: var(--gray-2);
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
     color: var(--text-med) !important;
-    font-size: 16px !important;
-    font-weight: 400 !important;
   }
 
-  /* Hide weird arrows which are next to "submit a new..." buttons */
+  .morelink:hover a {
+    background: var(--gray-3);
+  }
+
   .morelink .nub {
-    display: none !important
+    display: none;
   }
 
-  /* Hide front page's "create note" */
+  /* Front page's "create note" */
   .sidebox.create .spacer {
-    display: none !important;
+    display: none;
   }
 
   /* "Message the mods" */
   .sidecontentbox .message-button a.c-btn-primary {
-    background-color: var(--gray-2) !important;
-    border-bottom: none !important;
+    background-color: var(--gray-2);
+    border-bottom: none;
   }
 
   /* Tools */
   .sidecontentbox.collapsible a {
     background: none;
+    color: var(--text-med) !important;
   }
 
   .sidecontentbox .collapse-button {
-    background: var(--gray-3) !important;
+    background: var(--gray-3);
     color: var(--text-normal);
   }
 
@@ -418,7 +363,7 @@
   }
 
   .titlebox :is(.leavemoderator, .tagline):not(.subscribe-button) {
-    display: none !important;
+    display: none;
   }
 
   .subscribe-button a.add.active {
@@ -433,18 +378,16 @@
 
   .link {
     display: flex !important;
-    margin: 0 !important;
-    padding: 16px 0 !important;
-    background-color: transparent;
-    border: none;
+    margin: 0;
+    padding: 8px 0;
   }
 
   .link .entry {
-    width: 100% !important;
+    width: 100%;
   }
 
   .link.last-clicked {
-    border: none !important;
+    border: none;
   }
 
   .link .rank {
@@ -452,52 +395,50 @@
   }
 
   .link .domain a {
-    font-size: 12px !important;
-    color: var(--text-dark) !important;
+    font-size: 12px;
+    color: var(--text-dark);
   }
 
   /* Score {{{2 */
 
   .link .score {
-    color: var(--text-normal) !important;
-    font-size: 16px !important;
-    padding: 8px 0 !important;
+    font-size: 16px;
+    padding: 8px 0;
   }
 
   .link .midcol {
-    flex: 0 0 56px !important;
-    margin: 4px 8px !important;
+    margin: 8px 10px 0 20px;
   }
 
   /* Post Image {{{2 */
 
   .link .thumbnail {
-    flex: 0 0 auto !important;
-    height: 78px !important;
-    margin: 0 16px 0 0 !important;
-    width: 140px !important;
+    flex: 0 0 auto;
+    height: 78px;
+    width: 140px;
+    margin-right: 16px;
   }
 
   .link .thumbnail img {
-    height: auto !important;
-    width: inherit !important;
+    height: auto;
+    width: inherit;
   }
 
   .link .thumbnail:not(.outbound) {
-    background-color: var(--gray-2) !important;
-    background-position: 0px -906px !important;
-    opacity: 0.5 !important;
+    background-color: var(--gray-2);
+    background-position: 0 -906px;
+    opacity: 0.5;
   }
 
   /* Post Title {{{2 */
 
   .link .title {
     color: var(--text-normal) !important;
-    font-size: 18px !important;
+    font-size: 18px;
   }
 
   .link p.title {
-    padding: 0 0 8px 0 !important;
+    padding-bottom: 8px;
   }
 
   .link .title:hover {
@@ -506,26 +447,23 @@
 
   .link a.title:visited {
     color: var(--text-dark) !important;
-    opacity: 0.8 !important;
+    opacity: 0.8;
   }
 
   /* Tagline {{{2 */
 
   .tagline {
-    align-items: center !important;
-    color: var(--text-dark) !important;
-    display: flex !important;
-    font-size: 12px !important;
+    color: var(--text-dark);
+    font-size: 12px;
+    margin-left: 4px;
   }
 
   .link .tagline :is(time, .author, .subreddit) {
-    margin: 0 6px !important;
-    white-space: nowrap !important;
+    margin: 0 4px;
+    white-space: nowrap;
   }
 
-  .tagline .author,
-  .tagline .subreddit,
-  .tagline .voteWeight {
+  .tagline a.author, .tagline a.subreddit {
     color: var(--text-normal) !important;
   }
 
@@ -536,36 +474,34 @@
   /* Link Action Menu {{{2 */
 
   .link .flat-list {
-    font-size: 12px !important;
-    padding: 0 !important
+    font-size: 12px;
+    padding: 0;
   }
 
-  .entry .buttons li {
-    display: inline-flex !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  .entry .buttons {
+    margin: 5px 0 0 12px;
   }
 
   .entry .buttons li a {
     color: var(--text-dark) !important;
-    font-size: 12px !important;
-    padding: 4px 8px !important;
+    font-size: 12px;
+    padding: 6px 4px;
   }
 
   .entry .buttons li a:hover {
     color: var(--text-dark-hover) !important;
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
   /* Expand {{{2 */
 
   .expando-button {
-    filter: grayscale(100%) invert(90%) !important;
-    margin: 8px 8px 0 0 !important;
+    filter: grayscale(100%) invert(90%);
+    margin: 8px 16px 0 0;
   }
 
   .expando-button:hover {
-    filter: grayscale(100%) !important;
+    filter: grayscale(100%);
   }
 
   /* }}}2 */
@@ -578,24 +514,19 @@
 
   .md-container h1,
   .md-container h1 strong {
-    color: var(--text-normal) !important;
-    font-size: 22px !important;
-    font-weight: 300 !important;
+    color: var(--text-normal);
+    font-size: 22px;
+    font-weight: 300;
   }
 
   .md-container h1:first-child {
-    margin-top: 16px !important;
+    margin-top: 16px;
   }
 
   .link .usertext-body .md {
-    background: none !important;
-    border: 0 !important;
+    background: none;
+    border: 1px dotted var(--gray-a0);
     font-size: 16px;
-  }
-
-  .pinnable-content.pinned {
-    background-color: var(--gray-a0) !important;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5) !important;
   }
 
   .crosspost-preview {
@@ -608,7 +539,17 @@
     --mewidth: calc(40vw);
     width: var(--mewidth);
     height: calc(var(--mewidth) * 0.5625);
-  } /* the rest is at the end of style */
+  } /* the rest is at the end of the file */
+
+
+  .pinnable-content.pinned {
+    background-color: var(--gray-a0) !important;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .pinnable-content.pinned .dismiss-pinnable {
+    filter: invert(1);
+  }
 
   /* Flair edit {{{1 */
 
@@ -617,7 +558,7 @@
   }
 
   .flairselector .flairoptionpane li {
-    display: block !important;
+    display: block;
   }
 
   .flairselector, #newlink-flair-dropdown {
@@ -636,12 +577,10 @@
 
   /* Comments {{{1 */
 
-  .usertext.grayed .usertext-body {
-    background-color: transparent;
-  }
-
+  .usertext.grayed .usertext-body,
   .usertext.grayed .usertext-body .md {
     color: var(--text-dark) !important;
+    background-color: transparent;
   }
 
   .comment .usertext.border .usertext-body {
@@ -659,7 +598,7 @@
 
   .comment .score,
   .comment time:not(.edited-timestamp) {
-    margin-left: 10px !important;
+    margin-left: 10px;
   }
 
   .comment .score {
@@ -670,7 +609,7 @@
     visibility: hidden;
   }
 
-  .comment .userattrs .submitter:after {
+  .comment .userattrs .submitter::after {
     visibility: visible;
     margin-left: -7px;
     content: "OP";
@@ -681,7 +620,7 @@
   }
 
   .locked-infobar ~ div .comment .reply-button {
-    display: none !important;
+    display: none;
   }
 
   /* "sorted by" / "links from"  dropdown menu {{{1 */
@@ -734,16 +673,20 @@
     border: 1px solid;
   }
 
+  .clear-input-button {
+    filter: invert(1) brightness(2);
+  }
+
   .tabmenu.formtab a {
     border: none;
-    font-size: 14px !important;
-    padding-bottom: 5px !important;
+    font-size: 14px;
+    padding-bottom: 5px;
     background: var(--gray-3);
     color: var(--text-normal) !important;
   }
 
   .tabmenu.formtab .selected a {
-    font-size: 18px !important;
+    font-size: 18px;
     background: var(--gray-1);
   }
 
@@ -768,11 +711,10 @@
   /* Stylesheet edit page */
 
   .stylesheet-customize-container {
-    width: 80%;
+    width: max-content;
   }
 
   ul.image-preview-list .description pre.img-url {
-    background: none !important;
     color: var(--text-normal);
   }
 
@@ -791,9 +733,8 @@
   }
 
   .nextprev a {
-    padding: 0.3em;
-    font-size: 1.5em;
-    border-radius: 0;
+    padding: 3px;
+    font-size: 16px;
     border: 1px solid var(--gray-3);
     text-transform: uppercase;
     color: var(--text-med) !important;
@@ -817,7 +758,7 @@
 
   .listing-chooser li {
     background-color: var(--gray-1) !important;
-    border-color: var(--gray-3)
+    border-color: var(--gray-3);
   }
 
   .listing-chooser li:hover {
@@ -829,7 +770,7 @@
   }
 
   .listing-chooser li.selected {
-    box-shadow: none !important;
+    box-shadow: none;
     border-color: var(--gray-3)
   }
 
@@ -841,16 +782,9 @@
     background: var(--gray-3) !important;
   }
 
-  .grippy::after,
-  .grippy::before {
-    border: none !important;
+  .grippy::after, .grippy::before {
     filter: grayscale(1) brightness(3);
-    transition: none !important;
     position: initial !important;
-  }
-
-  .listing-chooser button {
-    color: var(--text-normal);
   }
 
   .listing-chooser .intro {
@@ -859,18 +793,14 @@
 
   /* Messages {{{1 */
 
-  .message > .entry .head {
-    color: var(--text-dark) !important;
-  }
-
-  .correspondent {
-    background: transparent !important;
+  .message > .entry .tagline {
+    color: var(--text-dark);
+    margin: 5px;
   }
 
   .message.new > .entry {
     background-color: #191919;
     border: 1px solid #333;
-    padding: 6px;
   }
 
   /* Wiki {{{1 */
@@ -884,8 +814,12 @@
     background-color: var(--gray-3) !important;
   }
 
+  .wikirevisionlisting {
+    width: max-content;
+  }
+
   .wikirevisionlisting .revision {
-    color: var(--text-normal) !important;
+    color: var(--text-normal);
   }
 
   /* REDDIT GOLD {{{1 */
@@ -903,21 +837,13 @@
     color: var(--gold);
   }
 
-  .server-seconds {
-    background-color: initial;
-  }
-
-  .server-seconds em {
-    color: var(--gray-4);
-  }
-
   .gold-expiration-info .karma {
     color: var(--gold);
   }
 
   /* ~misc~ {{{1 */
 
-  #pref-form label[for="show_stylesheets"]:after {
+  #pref-form label[for="show_stylesheets"]::after {
     content: "\00a0\00a0 \00a0\00a0 UNCHECK THIS WHEN USING USERSTYLES!";
     color: var(--red);
   }
@@ -964,7 +890,7 @@
   }
 
   .premium-banner-outer {
-    display: none !important;
+    display: none;
   }
 
   /* }}}1 */
