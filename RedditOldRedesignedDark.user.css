@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.8
+@version        2.1.9
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -508,9 +508,7 @@
     font-size: 12px !important;
   }
 
-  .tagline time,
-  .tagline .author,
-  .tagline .subreddit {
+  .link .tagline :is(time, .author, .subreddit) {
     margin: 0 6px !important;
     white-space: nowrap !important;
   }
@@ -591,14 +589,17 @@
     font-size: 16px;
   }
 
-  /* Crosspost */
+  .pinnable-content.pinned {
+    background-color: var(--gray-a0) !important;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5) !important;
+  }
+
   .crosspost-preview {
     background: var(--gray-1);
     border: none;
     max-width: 99%;
   }
 
-  /* YouTube */
   div.expando > iframe.media-embed {
     --mewidth: calc(40vw);
     width: var(--mewidth);
@@ -653,7 +654,7 @@
   }
 
   .comment .score,
-  .comment time {
+  .comment time:not(.edited-timestamp) {
     margin-left: 10px !important;
   }
 
