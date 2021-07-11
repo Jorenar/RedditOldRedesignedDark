@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.11
+@version        2.1.12
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -291,6 +291,11 @@
     font-size: 13px;
   }
 
+  .side .sidebox .spacer {
+    background: var(--gray-a0);
+    padding: 5px 3px;
+  }
+
   /* Subreddit Name */
   .titlebox h1 a {
     color: var(--text-normal) !important;
@@ -446,6 +451,11 @@
     display: none;
   }
 
+  .link .domain a {
+    font-size: 12px !important;
+    color: var(--text-dark) !important;
+  }
+
   /* Score {{{2 */
 
   .link .score {
@@ -545,16 +555,6 @@
   .entry .buttons li a:hover {
     color: var(--text-dark-hover) !important;
     text-decoration: none !important;
-  }
-
-  /* Domain {{{2 */
-
-  .domain {
-    font-size: 14px !important;
-  }
-
-  .domain a {
-    color: var(--text-dark) !important;
   }
 
   /* Expand {{{2 */
