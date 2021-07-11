@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.10
+@version        2.1.11
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -571,6 +571,10 @@
   /* }}}2 */
 
   /* Post {{{1 */
+
+  .content [data-rank=""] .top-matter a.title:visited {
+    color: var(--text-normal) !important;
+  }
 
   .md-container h1,
   .md-container h1 strong {
