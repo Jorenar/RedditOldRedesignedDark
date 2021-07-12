@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.21
+@version        2.1.22
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -297,7 +297,7 @@
 
   /* Search Expanded Note {{{2 */
   #searchexpando {
-      padding: 8px 16px;
+    padding: 8px 16px;
   }
 
   #searchexpando label {
@@ -589,6 +589,10 @@
 
   .comment .entry {
     padding-bottom: 6px;
+  }
+
+  .comment .usertext-body.md-container .md {
+    font-size: 1.15em;
   }
 
   .usertext.grayed .usertext-body, .usertext.grayed .usertext-body .md {
