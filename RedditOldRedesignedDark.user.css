@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.20
+@version        2.1.21
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -17,6 +17,9 @@
     --gray-2: #343434;
     --gray-3: #454545;
     --gray-a0: #1e1e1e;
+    --blue-0: #4ac;
+    --blue-1: #369;
+    --blue-2: #2c89f5;
     --red: #d3391a;
     --dark-red: #440202;
     --gold: #fb0;
@@ -25,9 +28,9 @@
     --text-normal: hsla(0, 100%, 100%, 0.8);
     --text-normal-hover: #fff;
     --text-med: hsl(0, 0%, 60%);
-    --url: hsla(200, 20%, 60%, 0.8);
     --text-dark: hsl(0, 0%, 45%);
     --text-dark-hover: var(--text-normal);
+    --url: hsla(200, 20%, 60%, 0.8);
   }
 
   /* General tags {{{1 */
@@ -56,7 +59,7 @@
 
   body[class] pre,
   body[class] code {
-    background: var(--gray-a0);
+    background: var(--gray-a0) !important;
     border: none;
   }
 
@@ -76,6 +79,12 @@
 
   body[class] button:hover {
     background: var(--gray-1);
+  }
+
+  body[class] input[type="text"] {
+    color: var(--text-med) !important;
+    border-radius: 2px;
+    font-size: 14px;
   }
 
   /* Upvote/downvote {{{1 */
@@ -122,7 +131,7 @@
   /* Subreddit links */
   #sr-header-area a,
   #sr-header-area .dropdown.srdrop .selected {
-    color: var(--text-med);
+    color: var(--text-med) !important;
     font-size: 13px;
     text-decoration: none;
   }
@@ -286,16 +295,9 @@
     color: var(--text-med);
   }
 
-  /* Search Input {{{2 */
-  #search input[type="text"] {
-    border-radius: 2px;
-    font-size: 14px;
-  }
-
-  /* Search Expanded Note */
+  /* Search Expanded Note {{{2 */
   #searchexpando {
-    background: var(--gray-2);
-    padding: 8px 16px;
+      padding: 8px 16px;
   }
 
   #searchexpando label {
@@ -530,17 +532,17 @@
     font-size: 16px;
   }
 
+
   .crosspost-preview {
     background: var(--gray-1);
     border: none;
     max-width: 99%;
   }
 
-  div.expando > iframe.media-embed {
-    --mewidth: calc(40vw);
-    width: var(--mewidth);
-    height: calc(var(--mewidth) * 0.5625);
-  } /* the rest is at the end of the file */
+  .crosspost-preview.video .crosspost-preview-content {
+    background-color: var(--gray-0);
+    border: 4px solid var(--gray-1);
+  }
 
 
   .pinnable-content.pinned {
@@ -551,6 +553,13 @@
   .pinnable-content.pinned .dismiss-pinnable {
     filter: invert(1);
   }
+
+
+  div.expando iframe.media-embed {
+    --mewidth: calc(40vw);
+    width: var(--mewidth);
+    height: calc(var(--mewidth) * 0.5625);
+  } /* the rest is at the end of the file */
 
   /* Flair edit pop-up {{{1 */
 
@@ -610,7 +619,7 @@
 
   .comment .userattrs .submitter {
     visibility: hidden;
-    color: cyan !important;
+    color: var(--blue-0) !important;
   }
 
   .comment .userattrs .submitter::after {
@@ -861,7 +870,21 @@
   /* ~misc~ {{{1 */
 
   .modactionlisting a {
-    color: #369 !important;
+    color: var(--blue-1) !important;
+  }
+
+  .search-result :link > mark {
+    color: var(--blue-2);
+    font-size: 1.05em;
+  }
+
+  .subreddit .usertext .md {
+    background-color: transparent;
+  }
+
+  .searchpane {
+    background-color: var(--gray-2);
+    width: 350px;
   }
 
   :is(.flair, .linkflairlabel):not(.flairrichtext) {
