@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.1.22
+@version        2.1.23
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -587,6 +587,14 @@
 
   /* Comments {{{1 */
 
+  .comment {
+    background-color: transparent;
+  }
+
+  .nestedlisting > .comment {
+    border: none;
+  }
+
   .comment .entry {
     padding-bottom: 6px;
   }
@@ -872,6 +880,10 @@
   }
 
   /* ~misc~ {{{1 */
+
+  .entry {
+    overflow: inherit;
+  }
 
   .modactionlisting a {
     color: var(--blue-1) !important;
