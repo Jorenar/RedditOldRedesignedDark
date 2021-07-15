@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.4
+@version        2.2.5
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -338,6 +338,23 @@
 
       .sidebox.create .spacer { /* Front page's "create note" */
         display: none;
+      }
+
+      .read-next-container .read-next {
+        & {
+          background: var(--gray-2);
+          border-color: var(--gray-3);
+        }
+
+        .read-next-header {
+          background-color: var(--gray-1);
+          color: var(--text-normal);
+          border-color: var(--gray-3);
+        }
+
+        .read-next-meta {
+          color: var(--text-normal);
+        }
       }
 
 
