@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.2
+@version        2.2.3
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -211,6 +211,7 @@
       }
 
       #header-bottom-right {
+
         & {
           align-items: center;
           background: none;
@@ -226,6 +227,18 @@
 
         a:hover {
           color: var(--text-normal-hover);
+        }
+
+        .user { /* hide karma */
+          & {
+            display: flex;
+            visibility: hidden;
+          }
+
+          > a {
+            order: 1;
+            visibility: visible;
+          }
         }
 
       }
