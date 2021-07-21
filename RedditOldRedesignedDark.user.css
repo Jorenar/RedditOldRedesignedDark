@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.5
+@version        2.2.6
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -809,10 +809,6 @@
           visibility: visible;
         }
 
-        .locked-infobar ~ div & .reply-button {
-          display: none;
-        }
-
         textarea {
           width: 99% !important;
         }
@@ -922,6 +918,10 @@
 
     .commentarea .menuarea {
       margin-top: 5px;
+    }
+
+    .locked-infobar ~ #siteTablE .reply-button { /* hide "reply" on locked posts */
+      display: none;
     }
 
     .modactionlisting a { /* moderation log */
