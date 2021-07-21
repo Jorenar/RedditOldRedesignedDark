@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.7
+@version        2.2.8
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -947,6 +947,10 @@
 
     .subreddit .usertext .md {
       background-color: transparent;
+    }
+
+    .flair, .linkflairlabel {
+      margin: 0 0.5em;
     }
 
     :is(.flair, .linkflairlabel):not(.flairrichtext) {
