@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.6
+@version        2.2.7
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -920,7 +920,7 @@
       margin-top: 5px;
     }
 
-    .locked-infobar ~ #siteTablE .reply-button { /* hide "reply" on locked posts */
+    .locked-infobar ~ .commentarea .reply-button { /* hide "reply" on locked posts */
       display: none;
     }
 
