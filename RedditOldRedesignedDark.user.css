@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.8
+@version        2.2.9
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -439,7 +439,7 @@
         text-transform: uppercase;
       }
 
-      &.inuse {
+      & ~ .inuse {
         a {
           background-color: var(--gray-3);
           color: var(--text-normal) !important;
