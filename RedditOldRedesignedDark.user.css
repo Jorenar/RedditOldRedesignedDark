@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.9
+@version        2.2.10
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -892,8 +892,21 @@
       }
     }
 
-    /* Flair edit pop-up */
-    .flairselector {
+    /* Flairs */
+    .flair, .linkflairlabel {
+      & {
+        margin: 0 0.5em;
+      }
+
+      &:not(.flairrichtext) {
+        background: var(--gray-1);
+        border-color: var(--gray-3);
+        color: var(--text-med);
+        padding: 2px;
+      }
+    }
+
+    .flairselector { /* edit pop-up */
       & {
         background-color: var(--gray-2);
         box-shadow: 2px 2px 2px var(--gray-0);
@@ -914,20 +927,7 @@
       }
     }
 
-    /* ~misc~ {{{ */
-
-    .commentarea .menuarea {
-      margin-top: 5px;
-    }
-
-    .locked-infobar ~ .commentarea .reply-button { /* hide "reply" on locked posts */
-      display: none;
-    }
-
-    .modactionlisting a { /* moderation log */
-      color: var(--blue-1) !important;
-    }
-
+    /* Search */
     .search {
       &pane {
         background-color: var(--gray-2);
@@ -945,19 +945,26 @@
       }
     }
 
+    /* ~misc~ {{{ */
+
+    .commentarea .menuarea {
+      margin-top: 5px;
+    }
+
+    .locked-infobar ~ .commentarea .reply-button { /* hide "reply" on locked posts */
+      display: none;
+    }
+
+    .modactionlisting a { /* moderation log */
+      color: var(--blue-1) !important;
+    }
+
+    .interstitial-subreddit-description {
+      background-color: var(--gray-a0);
+    }
+
     .subreddit .usertext .md {
       background-color: transparent;
-    }
-
-    .flair, .linkflairlabel {
-      margin: 0 0.5em;
-    }
-
-    :is(.flair, .linkflairlabel):not(.flairrichtext) {
-      background: var(--gray-1);
-      border-color: var(--gray-3);
-      color: var(--text-med);
-      padding: 2px;
     }
 
     #pref-form label[for="show_stylesheets"]::after {
