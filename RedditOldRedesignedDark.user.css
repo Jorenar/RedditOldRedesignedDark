@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.10
+@version        2.2.11
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -579,10 +579,6 @@
       .score.likes {
         filter: brightness(0.7) contrast(200%);
       }
-
-      .archived-infobar ~ div & .arrow {
-        visibility: hidden;
-      }
     }
 
     /* Pinnable */
@@ -953,6 +949,10 @@
 
     .locked-infobar ~ .commentarea .reply-button { /* hide "reply" on locked posts */
       display: none;
+    }
+
+    .archived-infobar ~ div .midcol .arrow { /* hide voting on archived posts */
+      visibility: hidden;
     }
 
     .modactionlisting a { /* moderation log */
