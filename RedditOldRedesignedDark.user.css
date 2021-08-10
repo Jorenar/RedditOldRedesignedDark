@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.3
+@version        2.3.4
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -809,40 +809,6 @@
           width: 99% !important;
         }
 
-        & { /* comment collapser */
-          & {
-            position: relative;
-          }
-
-          > .midcol {
-            margin-left: 20px;
-          }
-
-          > .child {
-            border: none;
-          }
-
-          a.expand {
-            & {
-              height: calc(100% - 15px);
-              left: 0;
-              position: absolute;
-              text-decoration: none;
-              top: 0;
-            }
-
-            &::after {
-              border-right: 2px dotted;
-              content: '';
-              height: calc(100% - 15px);
-              left: 5.7px;
-              opacity: 0.4;
-              position: absolute;
-              top: 18px;
-            }
-          }
-        }
-
       }
 
       &.message {
@@ -896,6 +862,40 @@
         }
       }
 
+    }
+
+    .commentarea .comment { /* comment collapser */
+      & {
+        position: relative;
+      }
+
+      > .midcol {
+        margin-left: 20px;
+      }
+
+      > .child {
+        border: none;
+      }
+
+      a.expand {
+        & {
+          height: calc(100% - 15px);
+          left: 0;
+          position: absolute;
+          text-decoration: none;
+          top: 0;
+        }
+
+        &::after {
+          border-right: 2px dotted;
+          content: '';
+          height: calc(100% - 15px);
+          left: 5.7px;
+          opacity: 0.4;
+          position: absolute;
+          top: 18px;
+        }
+      }
     }
 
     /* Wiki */
