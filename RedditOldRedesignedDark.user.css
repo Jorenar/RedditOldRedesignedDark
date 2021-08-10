@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.2.11
+@version        2.3.0
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -808,6 +808,39 @@
         textarea {
           width: 99% !important;
         }
+
+        /* comment collapser */ & {
+        & {
+          position: relative;
+        }
+
+        > .midcol {
+          margin-left: 20px;
+        }
+
+        > .child {
+          border: none;
+        }
+
+        a.expand {
+          & {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            background: var(--gray-a0);
+            opacity: 0.5;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        &.noncollapsed > .entry > .tagline > a.expand {
+          height: 100%;
+        }
+      }
 
       }
 
