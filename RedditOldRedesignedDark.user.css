@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.4
+@version        2.3.5
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -634,21 +634,25 @@
 
         .thumbnail {
           & {
+            background-color: var(--gray-2);
             flex: 0 0 auto;
             height: 78px;
             margin-right: 16px;
+            opacity: 0.5;
             width: 140px;
+          }
+
+          &.outbound {
+            background-position: 0 -470px;
+          }
+
+          &:not(.outbound) {
+            background-position: 0 -906px;
           }
 
           img {
             height: auto;
             width: inherit;
-          }
-
-          &:not(.outbound) {
-            background-color: var(--gray-2);
-            background-position: 0 -906px;
-            opacity: 0.5;
           }
         }
 
