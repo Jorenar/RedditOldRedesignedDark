@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.5
+@version        2.3.6
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -758,6 +758,7 @@
 
         & {
           background-color: transparent;
+          width: max-content;
         }
 
         .nestedlisting > & {
@@ -781,13 +782,11 @@
           background-color: transparent;
           border: 1px dashed var(--gray-3);
           padding-right: 5px;
-          width: max-content;
         }
 
         &.new-comment .usertext-body {
           background-color: var(--gray-1);
           border: 2px dotted var(--gray-3);
-          width: max-content;
         }
 
         .score, time:not(.edited-timestamp) {
@@ -807,10 +806,6 @@
           content: "OP";
           margin-left: -7px;
           visibility: visible;
-        }
-
-        textarea {
-          width: 99% !important;
         }
 
       }
