@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.6
+@version        2.3.7
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -846,8 +846,12 @@
           }
 
 
-          .big-mod-buttons .pretty-button {
+          .big-mod-buttons .pretty-button, .reported-stamp {
             color: var(--gray-1) !important;
+          }
+
+          .report-reasons {
+            background-color: var(--gray-2);
           }
         }
 
