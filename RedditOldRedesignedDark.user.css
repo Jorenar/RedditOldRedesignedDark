@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.7
+@version        2.3.8
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -136,6 +136,12 @@
 
         .drop-choices a:hover {
           background: var(--gray-2);
+        }
+
+        /* Hide default subreddits */
+        .sr-list .separator:nth-of-type(2),
+        .sr-list .flat-list.sr-bar:nth-of-type(3) {
+          display: none;
         }
 
         /* Hide Redesign prompt */
