@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.8
+@version        2.3.9
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -86,10 +86,11 @@
 
     /* Header */
     #header {
-
       & {
         background: var(--gray-1);
         border-bottom: 2px solid var(--gray-0);
+        display: flex;
+        flex-wrap: wrap;
         position: sticky;
         top: 0;
       }
@@ -103,6 +104,7 @@
           display: flex;
           font-size: 12px;
           padding: 3px 0;
+          width: 100%;
         }
 
         /* Subreddit links */
@@ -157,7 +159,6 @@
       }
 
       #header-bottom-left {
-
         & {
           align-items: center;
           display: flex;
@@ -213,18 +214,17 @@
           }
 
         }
-
       }
 
       #header-bottom-right {
-
         & {
           align-items: center;
           background: none;
           display: flex;
           font-size: 14px;
+          margin-left: auto;
           padding: 0 8px;
-          top: 24px;
+          position: initial;
         }
 
         a {
@@ -246,9 +246,7 @@
             visibility: visible;
           }
         }
-
       }
-
     }
 
     /* Right sidebar */
