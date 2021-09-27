@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.10
+@version        2.3.11
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -926,6 +926,10 @@
         .revision {
           color: var(--text-normal);
         }
+      }
+
+      &-page-content {
+        width: calc(100% - 370px);
       }
     }
 
