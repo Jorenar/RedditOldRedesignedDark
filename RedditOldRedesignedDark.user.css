@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.12
+@version        2.3.13
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -1052,8 +1052,9 @@
     }
 
     .tutorial_post,
+    .happening-now-wrap,
     .premium-banner-outer {
-      display: none;
+      display: none !important;
     }
 
     /* }}} */
