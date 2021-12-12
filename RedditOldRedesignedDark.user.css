@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.11
+@version        2.3.12
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -8,7 +8,7 @@
 @preprocessor   less
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com") {
 
   /* COLOR DEFINITIONS */
   :root {
