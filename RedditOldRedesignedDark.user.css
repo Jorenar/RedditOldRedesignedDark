@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.13
+@version        2.3.14
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -788,9 +788,11 @@
           padding-right: 5px;
         }
 
-        &.new-comment .usertext-body {
-          background-color: var(--gray-1);
-          border: 2px dotted var(--gray-3);
+        &.new-comment, .new-comment {
+          .usertext-body {
+            background-color: var(--gray-1);
+            border: 2px dotted var(--gray-3);
+          }
         }
 
         .score, time:not(.edited-timestamp) {
