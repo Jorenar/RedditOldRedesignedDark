@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.16
+@version        2.3.17
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -741,7 +741,7 @@
         .crosspost-preview {
           background: var(--gray-1);
           border: none;
-          max-width: 99%;
+          max-width: max-content;
         }
 
         .crosspost-preview.video .crosspost-preview-content {
