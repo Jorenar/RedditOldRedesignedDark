@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.17
+@version        2.3.18
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -40,6 +40,10 @@
 
     &, .md {
       color: var(--text-normal);
+    }
+
+    .md-spoiler-text.revealed {
+      background: var(--gray-1);
     }
 
     a, a[class], a[class]:visited {
