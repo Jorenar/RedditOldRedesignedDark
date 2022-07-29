@@ -1,11 +1,13 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.3.18
+@version        2.4.0
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
 @namespace      joren.ga
 @preprocessor   less
+
+@var checkbox thumbnails "Show thumbnails" 1
 ==/UserStyle== */
 
 @-moz-document domain("www.reddit.com"), domain("old.reddit.com") {
@@ -641,6 +643,10 @@
         }
 
         .thumbnail {
+          & when (@thumbnails = 0) {
+            display: none !important;
+          }
+
           & {
             background-color: var(--gray-2);
             flex: 0 0 auto;
