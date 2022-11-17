@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name           Reddit Old Redesigned Dark
-@version        2.4.0
+@version        2.4.1
 @description    Dark theme for Reddit Old
 @author         Jorengarenar
 @homepageURL    https://github.com/Jorengarenar/RedditOldRedesignedDark
@@ -135,15 +135,26 @@
 
         /* "my subreddits" dropdown menu */
         .drop-choices {
-          background: var(--gray-0);
-          border: 1px solid var(--gray-2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.9);
-          font-size: 12px;
-          padding: 4px 0;
-        }
+          & {
+            background: var(--gray-0);
+            border: 1px solid var(--gray-2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.9);
+            font-size: 12px;
+            max-height: 50vh;
+            min-height: min-content;
+            overflow: clip auto;
+            padding: 4px 0;
+          }
 
-        .drop-choices a:hover {
-          background: var(--gray-2);
+          .choice {
+            & {
+              padding-right: 20px;
+            }
+
+            &:hover {
+              background: var(--gray-2);
+            }
+          }
         }
 
         /* Hide default subreddits */
