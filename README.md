@@ -14,3 +14,9 @@
   [preferences settings](https://old.reddit.com/prefs)!**
   <br>
   (or add filter `reddit.com##^link[title="applied_subreddit_stylesheet"]` to adblock)
+
+
+## Acknowledgments
+
+This style is a rewrite of [Reddit Redesigned](https://userstyles.org/styles/75410)
+by [Globex Designs, Inc.](https://userstyles.org/users/6943)
