@@ -12,6 +12,10 @@ Then [open raw file to install userstyle](https://raw.githubusercontent.com/Jore
   * uncheck "_allow subreddits to show me custom themes_" in Reddit [preferences](https://old.reddit.com/prefs),
   * or add filter `reddit.com##^link[title="applied_subreddit_stylesheet"]` to adblocker like [uBlock Origin](https://ublockorigin.com/).
 
+**For [Reddit Enhancement Suite (RES)](https://redditenhancementsuite.com/) users, you need to:**
+  * turn off "_Selected Entry (selectedEntry)_" under the extension `settings` > `Browsing` > `Selected Entry` tab.
+
+
 ## Acknowledgments
 
 This style is a rewrite of [Reddit Redesigned](https://userstyles.org/styles/75410)
